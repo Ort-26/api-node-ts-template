@@ -1,0 +1,43 @@
+{
+  "name": "api-node-template",
+  "version": "1.0.0",
+  "description": "Template for Node based API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ort-26/api-node-ts-template.git"
+  },
+  "author": "Carlos Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ort-26/api-node-ts-template/issues"
+  },
+  "homepage": "https://github.com/Ort-26/api-node-ts-template#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node ./src/index.ts",
+    "dev": "nodemon ./src/index.ts",
+    "start:prod": "npm run build && node ./dist/src/index.js",
+    "build": "npx tsc"
+  },  
+  "dependencies": {  
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2", 
+    "mysql2": "^3.6.3", 
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/express": "^4.17.20",
+    "@types/jsonwebtoken": "^9.0.4", 
+    "@types/node": "^20.8.10",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

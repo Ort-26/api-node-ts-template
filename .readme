@@ -1,0 +1,21 @@
+Index: Targets to router
+Router: Targets to Controllers
+Controllers: Targets to services
+Services: Targests to DAOs, Use mappers
+DAOs: Explicit implementation of database data fetching
+
+Folder structure:
+Reference: https://github.com/gitdagray/mongo_async_crud/blob/main/server.js
+- config
+- controllers
+- dao
+- db
+- middleware
+    - validations (express validations)
+- models
+- routes
+- services
+- utils
+    - mappers
+    - initialStates
+    - catalogs 

@@ -19,7 +19,7 @@ app.use(cors({
 //app.use('/users',usersRoutes);
 
 app.all('*', (req: Request, res: Response) => {
-    res.status(404); 
+    res.status(404).send(); 
 });
 
 app.listen(port, () => { 
